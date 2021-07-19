@@ -1,0 +1,88 @@
+.header-main {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  align-items: center;
+  max-width: 100vw;
+  width: 100vw;
+  padding-top: 15px;
+  margin-bottom: 30px;
+}
+
+.header-main .header-start {
+}
+
+.header-main .header-middles {
+  padding-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-main .header-middles a {
+  padding: 12px;
+  font-size: 20px;
+  width: 13%;
+  height: 10px;
+}
+
+.header-main .header-end {
+  display: flex;
+  flex-direction: row;
+  padding-right: 15px;
+}
+
+.header-main .header-end :last-child {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+  margin-left: 15px;
+  padding: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-main {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-main .header-start {
+  }
+
+  .header-main .header-middles {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-main .header-middles a {
+    width: 13%;
+    height: 13%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+  }
+
+  .header-main .header-end {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .header-main .header-end :first-child {
+    width: 45%;
+  }
+
+  .header-main .header-end :last-child {
+    width: 45%;
+  }
+}
